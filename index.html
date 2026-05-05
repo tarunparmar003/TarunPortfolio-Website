@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#F2F2F7" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+
+  <title>Tarun Parmar — Portfolio</title>
+  <meta name="description" content="Tarun Parmar — Aspiring Network Engineer. Networking, Cloud, Security. iOS-themed portfolio." />
+  <meta property="og:title" content="Tarun Parmar — Aspiring Network Engineer" />
+  <meta property="og:description" content="Networking · Cloud · Security · System Administration" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><rect width='24' height='24' rx='6' fill='%23007AFF'/><text x='12' y='17' font-family='-apple-system,sans-serif' font-size='14' font-weight='700' fill='white' text-anchor='middle'>T</text></svg>" />
+</head>
+<body>
+
+  <!-- Wallpaper / blurred gradient mesh -->
+  <div class="wallpaper"></div>
+
+  <!-- ╔════════════ STATUS BAR ════════════╗ -->
+  <div class="status-bar" aria-hidden="true">
+    <div class="status-left">
+      <span class="status-time">9:41</span>
+    </div>
+    <div class="status-right">
+      <span class="signal-dots"><span></span><span></span><span></span><span></span></span>
+      <span style="font-size:11px;font-weight:600;letter-spacing:.05em">5G</span>
+      <span class="battery-icon">
+        <span class="battery-shell"><span class="battery-fill"></span></span>
+      </span>
+    </div>
+  </div>
+
+  <!-- ╔════════════ DYNAMIC ISLAND ════════════╗ -->
+  <button class="dynamic-island" id="island" aria-label="Status">
+    <span class="di-dot"></span>
+    <span class="di-text">Available</span>
+    <span class="di-clock">9:41</span>
+  </button>
+
+  <!-- ╔════════════ LOCK SCREEN (HERO) ════════════╗ -->
+  <section class="lock-screen">
+    <div class="lock-date">Saturday, May 3</div>
+    <div class="lock-time">9:41</div>
+
+    <h1 class="lock-name reveal visible">Tarun Parmar</h1>
+    <p class="lock-role reveal visible">Aspiring Network Engineer</p>
+
+    <div class="lock-tags reveal visible">
+      <span class="lock-tag">Networking</span>
+      <span class="lock-tag">Cloud (AWS)</span>
+      <span class="lock-tag">Security</span>
+      <span class="lock-tag">Active Directory</span>
+      <span class="lock-tag">Linux</span>
+      <span class="lock-tag">Wireshark</span>
+      <span class="lock-tag">VAPT</span>
+    </div>
+
+    <button class="lock-cta" aria-label="Scroll to apps">
+      <span>Swipe up to explore</span>
+      <span class="lock-cta-arrow">↑</span>
+    </button>
+  </section>
+
+  <!-- ╔════════════ HOME SCREEN ════════════╗ -->
+  <section class="home-screen reveal" id="home-screen">
+    <h2 class="home-title">Tap any app</h2>
+    <p class="home-subtitle">Or scroll down to explore</p>
+
+    <div class="apps-grid">
+      <a href="#about" class="app">
+        <span class="app-icon icon-about">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+        </span>
+        <span class="app-label">About</span>
+      </a>
+
+      <a href="#skills" class="app">
+        <span class="app-icon icon-skills">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
+        </span>
+        <span class="app-label">Skills</span>
+      </a>
+
+      <a href="#experience" class="app">
+        <span class="app-icon icon-experience">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+        </span>
+        <span class="app-label">Experience</span>
+      </a>
+
+      <a href="#projects" class="app">
+        <span class="app-icon icon-projects">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+        </span>
+        <span class="app-label">Projects</span>
+      </a>
+
+      <a href="#certs" class="app">
+        <span class="app-icon icon-certs">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+        </span>
+        <span class="app-label">Certs</span>
+      </a>
+
+      <a href="#education" class="app">
+        <span class="app-icon icon-education">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+        </span>
+        <span class="app-label">Education</span>
+      </a>
+
+      <a href="https://github.com/tarunparmar003" target="_blank" rel="noopener" class="app">
+        <span class="app-icon icon-resume">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+        </span>
+        <span class="app-label">GitHub</span>
+      </a>
+
+      <a href="#contact" class="app">
+        <span class="app-icon icon-contact">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+        </span>
+        <span class="app-label">Contact</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ╔════════════ ABOUT ════════════╗ -->
+  <section class="section reveal" id="about">
+    <div class="section-eyebrow"><span class="dot"></span>About me</div>
+    <h2 class="section-title">A network engineer<br>in the making.</h2>
+    <p class="section-subtitle">Curious, methodical, and keen to bridge classroom theory with real-world infrastructure.</p>
+
+    <div class="about-grid">
+      <div class="about-avatar">
+        <div class="avatar-circle">TP</div>
+        <div class="avatar-name">Tarun Parmar</div>
+        <div class="avatar-role">Network Engineer · India</div>
+        <span class="avatar-status"><span class="dot"></span> Open to work</span>
+      </div>
+
+      <div class="about-bio glass-card">
+        <p>Hello! I'm <strong>Tarun</strong> — currently completing my B.Tech in Computer Science at Parul University (CGPA 7.38).</p>
+        <p>I'm passionate about computer networking, routing &amp; switching, and network security. Hands-on experience with <strong>VLANs, IP addressing, subnetting</strong>, and troubleshooting <strong>LAN/WAN connectivity</strong> issues.</p>
+        <p>Backed by certifications in <strong>AWS Cloud Computing, VAPT, and Network Administration</strong>. Practical exposure to Active Directory, system troubleshooting, and enterprise infrastructure support.</p>
+
+        <div class="about-stats">
+          <div class="about-stat">
+            <div class="num">7</div>
+            <div class="label">Certifications</div>
+          </div>
+          <div class="about-stat">
+            <div class="num">2</div>
+            <div class="label">Internships</div>
+          </div>
+          <div class="about-stat">
+            <div class="num">10+</div>
+            <div class="label">Skills</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ╔════════════ SKILLS ════════════╗ -->
+  <section class="section reveal" id="skills">
+    <div class="section-eyebrow"><span class="dot" style="background:var(--purple)"></span>Skills</div>
+    <h2 class="section-title">Tools of the trade.</h2>
+    <p class="section-subtitle">A mix of networking foundations, cloud, and security — battle-tested in lab and on the job.</p>
+
+    <div class="settings-list">
+      <div class="settings-row">
+        <span class="settings-icon" style="background:linear-gradient(135deg,#007AFF,#5AC8FA)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        </span>
+        <span class="settings-label">Networking Fundamentals</span>
+        <span class="settings-value">TCP/IP · OSI · DHCP · DNS</span>
+        <span class="settings-chevron">›</span>
+      </div>
+
+      <div class="settings-row">
+        <span class="settings-icon" style="background:linear-gradient(135deg,#5856D6,#AF52DE)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M3 6h18M3 12h18M3 18h18"/><circle cx="6" cy="6" r="1.5" fill="currentColor"/><circle cx="18" cy="12" r="1.5" fill="currentColor"/><circle cx="6" cy="18" r="1.5" fill="currentColor"/></svg>
+        </span>
+        <span class="settings-label">Routing &amp; Switching</span>
+        <span class="settings-value">VLAN · Trunk · Inter-VLAN · RIP</span>
+        <span class="settings-chevron">›</span>
+      </div>
+
+      <div class="settings-row">
+        <span class="settings-icon" style="background:linear-gradient(135deg,#34C759,#30D158)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+        </span>
+        <span class="settings-label">IP Addressing</span>
+        <span class="settings-value">IPv4 · Subnetting · CIDR</span>
+        <span class="settings-chevron">›</span>
+      </div>
+
+      <div class="settings-row">
+        <span class="settings-icon" style="background:linear-gradient(135deg,#FF3B30,#FF6482)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </span>
+        <span class="settings-label">Network Security</span>
+        <span class="settings-value">Firewall · VPN · IDS/IPS</span>
+        <span class="settings-chevron">›</span>
+      </div>
+
+      <div class="settings-row">
+        <span class="settings-icon" style="background:linear-gradient(135deg,#FF9500,#FFCC00)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </span>
+        <span class="settings-label">Network Tools</span>
+        <span class="settings-value">Wireshark · Cisco PT · Nmap</span>
+        <span class="settings-chevron">›</span>
+      </div>
+
+      <div class="settings-row">
+        <span class="settings-icon" style="background:linear-gradient(135deg,#0077B5,#00A0DC)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </span>
+        <span class="settings-label">System Administration</span>
+        <span class="settings-value">Active Directory · Domain</span>
+        <span class="settings-chevron">›</span>
+      </div>
+
+      <div class="settings-row">
+        <span class="settings-icon" style="background:linear-gradient(135deg,#1C1C1E,#3A3A3C)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
+        </span>
+        <span class="settings-label">Operating Systems</span>
+        <span class="settings-value">Windows · Linux</span>
+        <span class="settings-chevron">›</span>
+      </div>
+
+      <div class="settings-row">
+        <span class="settings-icon" style="background:linear-gradient(135deg,#FF9500,#FF6482)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
+        </span>
+        <span class="settings-label">Cloud Networking</span>
+        <span class="settings-value">AWS · VPC · EC2 · SG</span>
+        <span class="settings-chevron">›</span>
+      </div>
+
+      <div class="settings-row">
+        <span class="settings-icon" style="background:linear-gradient(135deg,#AF52DE,#FF2D92)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+        </span>
+        <span class="settings-label">Programming</span>
+        <span class="settings-value">Java · JavaScript · SQL</span>
+        <span class="settings-chevron">›</span>
+      </div>
+
+      <div class="settings-row">
+        <span class="settings-icon" style="background:linear-gradient(135deg,#34C759,#5AC8FA)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </span>
+        <span class="settings-label">IT Support</span>
+        <span class="settings-value">Hardware · Tickets · L1 / L2</span>
+        <span class="settings-chevron">›</span>
+      </div>
+    </div>
+
+    <div class="glass-card">
+      <h3 style="font-size:14px;font-weight:600;color:var(--text-3);text-transform:uppercase;letter-spacing:.06em;margin-bottom:14px">All Skills · Quick Tags</h3>
+      <div class="skills-pills">
+        <span class="skill-pill">TCP/IP</span><span class="skill-pill">OSI Model</span><span class="skill-pill">LAN/WAN</span>
+        <span class="skill-pill">ARP</span><span class="skill-pill">DHCP</span><span class="skill-pill">DNS</span>
+        <span class="skill-pill">VLAN</span><span class="skill-pill">Trunking</span><span class="skill-pill">Inter-VLAN</span>
+        <span class="skill-pill">Static Routing</span><span class="skill-pill">RIP</span>
+        <span class="skill-pill">IPv4</span><span class="skill-pill">Subnetting</span><span class="skill-pill">CIDR</span>
+        <span class="skill-pill">Firewall</span><span class="skill-pill">VPN</span><span class="skill-pill">IDS/IPS</span>
+        <span class="skill-pill">Wireshark</span><span class="skill-pill">Cisco Packet Tracer</span>
+        <span class="skill-pill">Nmap</span><span class="skill-pill">Netstat</span>
+        <span class="skill-pill">Active Directory</span><span class="skill-pill">Domain Joining</span>
+        <span class="skill-pill">Windows</span><span class="skill-pill">Linux</span>
+        <span class="skill-pill">AWS VPC</span><span class="skill-pill">EC2</span><span class="skill-pill">Security Groups</span>
+        <span class="skill-pill">Java</span><span class="skill-pill">JavaScript</span><span class="skill-pill">SQL</span>
+        <span class="skill-pill">Ticket Handling</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ╔════════════ EXPERIENCE ════════════╗ -->
+  <section class="section reveal" id="experience">
+    <div class="section-eyebrow"><span class="dot" style="background:var(--orange)"></span>Experience</div>
+    <h2 class="section-title">Where I've worked.</h2>
+    <p class="section-subtitle">Real internships, real networks. Hands-on from the start.</p>
+
+    <div class="notification">
+      <div class="notif-header">
+        <span class="notif-icon" style="background:linear-gradient(135deg,#007AFF,#5AC8FA)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+        </span>
+        <div class="notif-meta">
+          <div class="notif-title">Rang Technologies</div>
+          <div class="notif-subtitle">IT Intern</div>
+        </div>
+        <div class="notif-time">Jan – Mar 2026</div>
+      </div>
+      <div class="notif-body">Enterprise network monitoring &amp; AD support</div>
+      <ul class="notif-list">
+        <li>Monitored routers, switches &amp; firewalls in production environments</li>
+        <li>Troubleshot LAN/WAN issues — IP conflicts, VLAN misconfigs, routing</li>
+        <li>Configured VLANs, IP addressing, basic routing in lab + production</li>
+        <li>Managed Active Directory — user creation, permissions, domain support</li>
+        <li>Maintained IT inventory, hardware installs, system diagnostics</li>
+        <li>Resolved tickets and escalated complex issues to L2</li>
+      </ul>
+    </div>
+
+    <div class="notification">
+      <div class="notif-header">
+        <span class="notif-icon" style="background:linear-gradient(135deg,#FF2D92,#AF52DE)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+        </span>
+        <div class="notif-meta">
+          <div class="notif-title">DentalHifi</div>
+          <div class="notif-subtitle">Frontend Developer Intern</div>
+        </div>
+        <div class="notif-time">Mar – Jun 2024</div>
+      </div>
+      <div class="notif-body">React-based responsive web interfaces</div>
+      <ul class="notif-list">
+        <li>Built responsive UIs using React and modern frontend tools</li>
+        <li>Worked with version control + deployment workflows</li>
+        <li>Hands-on with web hosting, DNS configuration, server-side concepts</li>
+        <li>Strengthened understanding of client-server &amp; API architecture</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ╔════════════ PROJECTS ════════════╗ -->
+  <section class="section reveal" id="projects">
+    <div class="section-eyebrow"><span class="dot" style="background:var(--green)"></span>Projects</div>
+    <h2 class="section-title">Things I've built.</h2>
+    <p class="section-subtitle">From packet captures to portfolios — turning theory into practice.</p>
+
+    <div class="projects-grid">
+      <article class="project-card">
+        <div class="project-cover cover-1">
+          <div class="project-cover-pattern"></div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 12h4l3-9 4 18 3-9h4"/></svg>
+        </div>
+        <div class="project-content">
+          <h3 class="project-title">Network Traffic Analysis</h3>
+          <p class="project-desc">
+            Captured and analysed live network packets — TCP, UDP, HTTP, DNS — using Wireshark.
+            Studied 3-way handshake, latency, packet loss. Identified abnormal traffic patterns and
+            performed network security inspection.
+          </p>
+          <div class="project-tags">
+            <span class="project-tag">Wireshark</span>
+            <span class="project-tag">TCP/IP</span>
+            <span class="project-tag">Security</span>
+          </div>
+          <a href="https://github.com/tarunparmar003" target="_blank" rel="noopener" class="project-cta">
+            View on GitHub
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-cover cover-2">
+          <div class="project-cover-pattern"></div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        </div>
+        <div class="project-content">
+          <h3 class="project-title">Personal Portfolio Website</h3>
+          <p class="project-desc">
+            Built and deployed a personal portfolio with React.js + Firebase hosting. Implemented
+            secure contact forms with CAPTCHA, HTTPS configuration, and integrated GitHub repos
+            for live project showcasing.
+          </p>
+          <div class="project-tags">
+            <span class="project-tag">React</span>
+            <span class="project-tag">Firebase</span>
+            <span class="project-tag">DNS · HTTPS</span>
+          </div>
+          <a href="https://github.com/tarunparmar003/TarunPortfolio-Website" target="_blank" rel="noopener" class="project-cta">
+            View on GitHub
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ╔════════════ CERTIFICATIONS ════════════╗ -->
+  <section class="section reveal" id="certs">
+    <div class="section-eyebrow"><span class="dot" style="background:var(--red)"></span>Certifications</div>
+    <h2 class="section-title">Always learning.</h2>
+    <p class="section-subtitle">Seven certifications across cloud, security, networking, and digital forensics.</p>
+
+    <div class="certs-grid">
+      <div class="cert">
+        <span class="cert-badge badge-aws">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
+        </span>
+        <div>
+          <div class="cert-name">Cloud Computing (AWS)</div>
+          <div class="cert-issuer">QuickHeal Academy</div>
+        </div>
+      </div>
+
+      <div class="cert">
+        <span class="cert-badge badge-vapt">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </span>
+        <div>
+          <div class="cert-name">VAPT</div>
+          <div class="cert-issuer">QuickHeal Academy</div>
+        </div>
+      </div>
+
+      <div class="cert">
+        <span class="cert-badge badge-mobile">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+        </span>
+        <div>
+          <div class="cert-name">Mobile App Pen-Testing</div>
+          <div class="cert-issuer">QuickHeal Academy</div>
+        </div>
+      </div>
+
+      <div class="cert">
+        <span class="cert-badge badge-forensic">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </span>
+        <div>
+          <div class="cert-name">Digital Forensic Investigator</div>
+          <div class="cert-issuer">QuickHeal Academy</div>
+        </div>
+      </div>
+
+      <div class="cert">
+        <span class="cert-badge badge-net">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        </span>
+        <div>
+          <div class="cert-name">Network Administration</div>
+          <div class="cert-issuer">QuickHeal Academy</div>
+        </div>
+      </div>
+
+      <div class="cert">
+        <span class="cert-badge badge-cyber">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        </span>
+        <div>
+          <div class="cert-name">Cybersecurity Fundamentals</div>
+          <div class="cert-issuer">NPTEL</div>
+        </div>
+      </div>
+
+      <div class="cert">
+        <span class="cert-badge badge-sql">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/><path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"/></svg>
+        </span>
+        <div>
+          <div class="cert-name">SQL (Basic)</div>
+          <div class="cert-issuer">HackerRank</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ╔════════════ EDUCATION ════════════╗ -->
+  <section class="section reveal" id="education">
+    <div class="section-eyebrow"><span class="dot" style="background:var(--indigo)"></span>Education</div>
+    <h2 class="section-title">My learning path.</h2>
+    <p class="section-subtitle">From science fundamentals to a Bachelor's in Computer Science.</p>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-when">2022 — 2026</div>
+        <div class="timeline-what">Bachelor of Technology · Computer Science</div>
+        <div class="timeline-where">Parul University</div>
+        <span class="timeline-grade">CGPA 7.38</span>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-when">2020 — 2021</div>
+        <div class="timeline-what">Senior Secondary (12th) · Science</div>
+        <div class="timeline-where">GSSS Badhehra Rajputan</div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-when">2018 — 2019</div>
+        <div class="timeline-what">Secondary (10th)</div>
+        <div class="timeline-where">S.S.R.V.M. Sen. Sec. School</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ╔════════════ CONTACT ════════════╗ -->
+  <section class="section reveal" id="contact">
+    <div class="section-eyebrow"><span class="dot" style="background:var(--green)"></span>Contact</div>
+    <h2 class="section-title">Let's talk.</h2>
+    <p class="section-subtitle">Open to network engineer, implementation engineer, and IT infrastructure roles.</p>
+
+    <div class="contact-grid">
+
+      <!-- iMessage-style preview -->
+      <div class="imessage">
+        <div class="imessage-header">
+          <div class="imessage-avatar">TP</div>
+          <div class="imessage-name">Tarun Parmar</div>
+          <div class="imessage-status">Active now</div>
+        </div>
+        <div class="bubble-time">Today · 9:41 AM</div>
+        <div class="imessage-body">
+          <div class="bubble received">Hi! 👋 Thanks for visiting my portfolio.</div>
+          <div class="bubble received">I usually reply within a day.</div>
+          <div class="bubble sent">📧 tarunparmar22428@gmail.com</div>
+          <div class="bubble sent">📞 +91 78765 59535</div>
+          <div class="bubble received">Drop a message →</div>
+        </div>
+      </div>
+
+      <!-- Real form -->
+      <form class="contact-form" id="contactForm">
+        <h3>Send me a message</h3>
+        <div class="form-success"></div>
+
+        <div class="form-field">
+          <label for="cName">Your name</label>
+          <input id="cName" name="name" type="text" placeholder="Anita Sharma" required />
+        </div>
+        <div class="form-field">
+          <label for="cEmail">Your email</label>
+          <input id="cEmail" name="email" type="email" placeholder="you@company.com" required />
+        </div>
+        <div class="form-field">
+          <label for="cMsg">Message</label>
+          <textarea id="cMsg" name="message" placeholder="Hey Tarun, I'd love to talk about an opening..." required></textarea>
+        </div>
+        <button type="submit" class="form-submit">
+          Send Message
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ╔════════════ FOOTER ════════════╗ -->
+  <footer class="footer">
+    <p>© <span data-year>2026</span> Tarun Parmar &middot; built with <span class="footer-heart">♥</span> &middot; iOS-themed portfolio</p>
+    <p style="margin-top:6px;font-size:11px;opacity:.7">Inspired by Apple HIG. Not affiliated with Apple Inc.</p>
+  </footer>
+
+  <!-- ╔════════════ DOCK ════════════╗ -->
+  <nav class="dock" aria-label="Quick links">
+    <a href="mailto:tarunparmar22428@gmail.com" class="dock-item dock-mail">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+      <span class="dock-tooltip">Email</span>
+    </a>
+
+    <a href="https://github.com/tarunparmar003" target="_blank" rel="noopener" class="dock-item dock-github">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+      <span class="dock-tooltip">GitHub</span>
+    </a>
+
+    <a href="https://www.linkedin.com/in/tarunparmar003" target="_blank" rel="noopener" class="dock-item dock-linkedin">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.063 2.063 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+      <span class="dock-tooltip">LinkedIn</span>
+    </a>
+
+    <a href="mailto:tarunparmar22428@gmail.com?subject=Resume Request" class="dock-item dock-resume">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+      <span class="dock-tooltip">Resume</span>
+    </a>
+
+    <span class="dock-divider"></span>
+
+    <button class="dock-item dock-theme" id="themeToggle" aria-label="Toggle theme">
+      <svg id="moonIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      <svg id="sunIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+      <span class="dock-tooltip">Toggle theme</span>
+    </button>
+  </nav>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
